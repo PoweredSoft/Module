@@ -4,7 +4,7 @@ namespace PoweredSoft.Module.Abstractions
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddModule<T>(IServiceCollection services)
+        public static IServiceCollection AddModule<T>(this IServiceCollection services)
             where T : IModule, new()
         {
             var module = new T();
