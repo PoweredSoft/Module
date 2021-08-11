@@ -14,7 +14,7 @@ public class MyModule : IModule
 {
 	public IServiceCollection ConfigureServices(IServiceCollection services) 
 	{
-		services.AddOtherDependantModule();
+		services.AddModule<CoolOtherModule>();
 		return services;
 	}
 }
